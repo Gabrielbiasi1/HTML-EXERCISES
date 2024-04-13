@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        #completa {
+            display: flex;
+        }
+        #esquerda {
+            display:flex;
+            flex-direction: column;
+            background-color: lightsalmon;
+            flex: 1;
+            height: 100vh;
+        }
+        #direita {
+            background-color: lightgreen;
+            flex: 1;
+        }
+        #e_cima {
+            background-color: blue;
+            flex: 2;
+        }
+        #e_baixo {
+            flex:8;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="completa">
+        <div id="esquerda">
+            <div id="e_cima">c</div>
+            <div id="e_baixo">b</div>
+        </div>
+        <div id="direita"></div>
+    </div>
+</body>
+</html>

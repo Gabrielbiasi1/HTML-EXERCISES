@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        #completa {
+            display: flex;
+        }
+        #esquerda {
+            background-color: lightsalmon;
+            flex: 1;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        #direita {
+            background-color: lightgreen;
+            flex: 1;
+        }
+        #e_cima {
+            align-items: center;
+            background-color: white;
+            flex: 2;
+            display:flex;
+            color:#5d5d5d;
+        }
+        #e_baixo {
+            background-color: green;
+            flex: 8;
+        }
+        .icones{
+            justify-content: space-around;
+        }
+        #menu{
+            justify-content: space-evenly;
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="completa">
+        <div id="esquerda">
+            <div id="e_cima">
+                <div id="ham">
+                    <span class="material-symbols-outlined">
+                        drag_handle
+                        </span>
+                </div>
+                <div id="menu">
+                    <span>( NEW ARRIVALS</span>
+                    <span>WOMEN</span>
+                    <span>MEN</span>
+                    <span>COLLECTIONS )</span> 
+                </div>
+                <div id="icones">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                    <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+            </div>
+            <div id="e_baixo"></div>
+        </div>
+        <div id="direita"></div>
+    </div>
+</body>
+</html>
